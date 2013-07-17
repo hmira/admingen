@@ -1,0 +1,11 @@
+--- app/config/config_dev.yml	2013-06-03 17:02:37.000000000 +0200
++++ app/config/config_dev.yml-fake	2013-07-15 12:55:28.895812774 +0200
+@@ -4,7 +4,7 @@
+ framework:
+     router:
+         resource: "%kernel.root_dir%/config/routing_dev.yml"
+-        strict_requirements: true
++#        strict_requirements: true
+     profiler: { only_exceptions: false }
+ 
+ web_profiler:

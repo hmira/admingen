@@ -1,0 +1,25 @@
+--- vendor/cedriclombardot/admingenerator-generator-bundle/Admingenerator/GeneratorBundle/Menu/DefaultMenuBuilder.php.fake	2013-07-17 12:28:51.565164641 +0200
++++ vendor/cedriclombardot/admingenerator-generator-bundle/Admingenerator/GeneratorBundle/Menu/DefaultMenuBuilder.php	2013-07-17 12:33:22.834509789 +0200
+@@ -14,21 +14,7 @@
+         $menu = $factory->createItem('root');
+         $menu->setChildrenAttributes(array('id' => 'main_navigation', 'class' => 'nav'));
+         
+-        $overwrite = $this->addDropdown($menu, 'Replace this menu');
+-        
+-        $this->addLinkURI(
+-            $overwrite,
+-            'Create new menu builder',
+-            'https://github.com/symfony2admingenerator/AdmingeneratorGeneratorBundle'
+-            .'/blob/master/Resources/doc/cookbook/menu.md'
+-        )->setExtra('icon', 'icon-wrench');
+-        
+-        $this->addLinkURI(
+-            $overwrite,
+-            'Customize menu block',
+-            'https://github.com/symfony2admingenerator/AdmingeneratorGeneratorBundle'.
+-            '/blob/master/Resources/views/base_admin_navbar.html.twig'
+-        )->setExtra('icon', 'icon-fork');
++        $main = $this->addDropdown($menu, 'Lists');
+         
+         return $menu;
+     }

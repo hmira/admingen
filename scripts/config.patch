@@ -1,0 +1,25 @@
+--- Mikrofon/app/config/config.yml	2013-06-03 17:02:37.000000000 +0200
++++ app/config/config.yml	2013-07-15 17:38:00.667872081 +0200
+@@ -4,7 +4,7 @@
+ 
+ framework:
+     #esi:             ~
+-    #translator:      { fallback: %locale% }
++    translator:      { fallback: en }
+     secret:          %secret%
+     router:
+         resource: "%kernel.root_dir%/config/routing.yml"
+@@ -63,3 +63,13 @@
+     username:  %mailer_user%
+     password:  %mailer_password%
+     spool:     { type: memory }
++
++admingenerator_generator:
++    use_propel: false
++    use_doctrine_orm: true
++    use_doctrine_odm: false
++    base_admin_template: AdmingeneratorGeneratorBundle::base_admin_assetic_less.html.twig
++
++knp_menu:
++    twig:
++        template: AdmingeneratorGeneratorBundle:KnpMenu:knp_menu_trans.html.twig
