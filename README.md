@@ -1,4 +1,4 @@
-# Modified Symfony2 Admingenerator Bundle
+# Modified Symfony2 Admingenerator
 ------------------------------------------
 
 This gets all database tables and build an administration enviroment
