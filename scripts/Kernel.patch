@@ -1,12 +1,14 @@
---- app/AppKernel.php-fake	2013-07-11 17:13:01.127387341 +0200
-+++ app/AppKernel.php	2013-07-11 17:13:38.163570995 +0200
-@@ -16,6 +16,9 @@
+--- app/AppKernel.php.fake	2013-08-05 14:18:20.377254291 +0200
++++ app/AppKernel.php	2013-08-05 14:19:13.165516052 +0200
+@@ -16,6 +16,11 @@
              new Symfony\Bundle\AsseticBundle\AsseticBundle(),
              new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
              new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
-+        new Admingenerator\GeneratorBundle\AdmingeneratorGeneratorBundle(),
-+        new Knp\Bundle\MenuBundle\KnpMenuBundle(),
-+        new WhiteOctober\PagerfantaBundle\WhiteOctoberPagerfantaBundle()
++	new Admingenerator\GeneratorBundle\AdmingeneratorGeneratorBundle(),
++	new Knp\Bundle\MenuBundle\KnpMenuBundle(),
++	new WhiteOctober\PagerfantaBundle\WhiteOctoberPagerfantaBundle(),
++	new Admingenerator\UserBundle\AdmingeneratorUserBundle(),
++	new FOS\UserBundle\FOSUserBundle()
          );
  
          if (in_array($this->getEnvironment(), array('dev', 'test'))) {
